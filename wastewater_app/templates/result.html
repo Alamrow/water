@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results Of Effluent Sample</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'wastewater_app/styles.css' %}">
+</head>
+<body>
+    <h1>Results Of Effluent Sample</h1>
+    <div class="results-header">
+        <span>Parameter</span>
+        <span>Sample Result</span>
+        <span>Range</span>
+    </div>
+    <ul class="results-list">
+        {% for param, details in results.items %}
+            <li class="{% if details.within_range %}pass{% else %}fail{% endif %}">
+                <span class="param">{{ param|title }}</span>
+                <span class="result-value">{{ details.value }}</span>
+                <span class="result-range">{{ details.range }}</span>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'index' %}">Check Another</a>
+</body>
+</html>
