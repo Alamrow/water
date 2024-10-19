@@ -1,20 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Wastewater Check</title>
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'wastewater_app/styles.css' %}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Project</title>
 </head>
 <body>
-    <header>
-        <h1>Wastewater Treatment Plant Parameter Checker</h1>
-        <p>Ensure your wastewater meets regulatory standards</p>
-    </header>
-    <h2>Enter Wastewater Parameters</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Check">
-    </form>
+  <h1>Welcome to the Water Project</h1>
+  <p>Check water parameters and more!</p>
 </body>
 </html>
