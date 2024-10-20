@@ -19,12 +19,6 @@
       </p>
     </section>
     <section>
-      <h2>Coming Soon</h2>
-      <p>
-        We are currently in the process of setting up our platform. Soon, you'll be able to input water sample parameters and receive detailed analysis results. Our easy-to-use interface will help you understand the quality of your water and provide insights into improving it.
-      </p>
-    </section>
-    <section>
       <h2>Parameter Analysis</h2>
       <div class="parameter">
         <label for="bod">BOD (ppm):</label>
@@ -41,12 +35,16 @@
         <input type="number" id="tds" placeholder="Enter TDS value">
         <p id="tds-result"></p>
       </div>
-      <!-- Add more parameters as needed -->
-      <button id="analyze-btn">Analyze</button>
-    </section>
-  </main>
-  <footer>
-    <p>Created by Eng. Odeh Al Amrow, 2024</p>
-  </footer>
-</body>
-</html>
+      <div class="parameter">
+        <label for="no2">NO2 (ppm):</label>
+        <input type="number" id="no2" placeholder="Enter NO2 value">
+        <p id="no2-result"></p>
+      </div>
+      <div class="parameter">
+        <label for="no3">NO3 (ppm):</label>
+        <input type="number" id="no3" placeholder="Enter NO3 value">
+        <p id="no3-result"></p>
+      </div>
+      <div class="parameter">
+        <label for="tn">TN (ppm):</label>
+        <input
