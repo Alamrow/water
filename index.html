@@ -15,95 +15,88 @@
     <section>
       <h2>About Our Project</h2>
       <p>
-        Our waste water project aims to revolutionize the way we manage and treat waste water. By analyzing various water parameters, we strive to ensure cleaner and safer water for our communities. Stay tuned as we establish a robust system to monitor, compare, and improve water quality.
+        Our waste water project aims to revolutionize the way we manage and treat waste water. By analyzing various water parameters, we strive to ensure cleaner and safer water for our communities. The regulation standard for these parameters is based on EPA guidelines.
       </p>
     </section>
     <section>
-      <h2>Coming Soon</h2>
-      <p>
-        We are currently in the process of setting up our platform. Soon, you'll be able to input water sample parameters and receive detailed analysis results. Our easy-to-use interface will help you understand the quality of your water and provide insights into improving it.
-      </p>
+      <h2>Parameter Analysis</h2>
+      <div class="parameter">
+        <label for="bod">BOD (ppm):</label>
+        <input type="number" id="bod" placeholder="Enter BOD value">
+        <p id="bod-result"></p>
+      </div>
+      <div class="parameter">
+        <label for="cod">COD (ppm):</label>
+        <input type="number" id="cod" placeholder="Enter COD value">
+        <p id="cod-result"></p>
+      </div>
+      <div class="parameter">
+        <label for="tds">TDS (ppm):</label>
+        <input type="number" id="tds" placeholder="Enter TDS value">
+        <p id="tds-result"></p>
+      </div>
+      <div class="parameter">
+        <label for="nh4">NH4 (ppm):</label>
+        <input type="number" id="nh4" placeholder="Enter NH4 value">
+        <p id="nh4-result"></p>
+      </div>
+      <div class="parameter">
+        <label for="nh3">NH3 (ppm):</label>
+        <input type="number" id="nh3" placeholder="Enter NH3 value">
+        <p id="nh3-result"></p>
+      </div>
+      <div class="parameter">
+        <label for="cn">CN (ppm):</label>
+        <input type="number" id="cn" placeholder="Enter CN value">
+        <p id="cn-result"></p>
+      </div>
+      <div class="parameter">
+        <label for="fog">FOG (ppm):</label>
+        <input type="number" id="fog" placeholder="Enter FOG value">
+        <p id="fog-result"></p>
+      </div>
+      <div class="parameter">
+        <label for="hg">Hg (ppb):</label>
+        <input type="number" id="hg" placeholder="Enter Hg value">
+        <p id="hg-result"></p>
+      </div>
+      <div class="parameter">
+        <label for="ag">Ag (ppb):</label>
+        <input type="number" id="ag" placeholder="Enter Ag value">
+        <p id="ag-result"></p>
+      </div>
+      <div class="parameter">
+        <label for="fe">Fe (ppm):</label>
+        <input type="number" id="fe" placeholder="Enter Fe value">
+        <p id="fe-result"></p>
+      </div>
+      <div class="parameter">
+        <label for="mg">Mg (ppm):</label>
+        <input type="number" id="mg" placeholder="Enter Mg value">
+        <p id="mg-result"></p>
+      </div>
+      <div class="parameter">
+        <label for="cl">Cl (ppm):</label>
+        <input type="number" id="cl" placeholder="Enter Cl value">
+        <p id="cl-result"></p>
+      </div>
+      <div class="parameter">
+        <label for="f">F (ppm):</label>
+        <input type="number" id="f" placeholder="Enter F value">
+        <p id="f-result"></p>
+      </div>
+      <div class="parameter">
+        <label for="as">As (ppb):</label>
+        <input type="number" id="as" placeholder="Enter As value">
+        <p id="as-result"></p>
+      </div>
+      <div class="parameter">
+        <label for="se">Se (ppb):</label>
+        <input type="number" id="se" placeholder="Enter Se value">
+        <p id="se-result"></p>
+      </div>
+      <button id="analyze-btn">Analyze</button>
     </section>
-    <section>
-     <section>
-  <h2>Parameter Analysis</h2>
-  <div class="parameter">
-    <label for="bod">BOD (ppm):</label>
-    <input type="number" id="bod" placeholder="Enter BOD value">
-    <p id="bod-result"></p>
-  </div>
-  <div class="parameter">
-    <label for="cod">COD (ppm):</label>
-    <input type="number" id="cod" placeholder="Enter COD value">
-    <p id="cod-result"></p>
-  </div>
-  <div class="parameter">
-    <label for="tds">TDS (ppm):</label>
-    <input type="number" id="tds" placeholder="Enter TDS value">
-    <p id="tds-result"></p>
-  </div>
-  <div class="parameter">
-    <label for="nh4">NH4 (ppm):</label>
-    <input type="number" id="nh4" placeholder="Enter NH4 value">
-    <p id="nh4-result"></p>
-  </div>
-  <div class="parameter">
-    <label for="nh3">NH3 (ppm):</label>
-    <input type="number" id="nh3" placeholder="Enter NH3 value">
-    <p id="nh3-result"></p>
-  </div>
-  <div class="parameter">
-    <label for="cn">CN (ppm):</label>
-    <input type="number" id="cn" placeholder="Enter CN value">
-    <p id="cn-result"></p>
-  </div>
-  <div class="parameter">
-    <label for="fog">FOG (ppm):</label>
-    <input type="number" id="fog" placeholder="Enter FOG value">
-    <p id="fog-result"></p>
-  </div>
-  <div class="parameter">
-    <label for="hg">Hg (ppb):</label>
-    <input type="number" id="hg" placeholder="Enter Hg value">
-    <p id="hg-result"></p>
-  </div>
-  <div class="parameter">
-    <label for="ag">Ag (ppb):</label>
-    <input type="number" id="ag" placeholder="Enter Ag value">
-    <p id="ag-result"></p>
-  </div>
-  <div class="parameter">
-    <label for="fe">Fe (ppm):</label>
-    <input type="number" id="fe" placeholder="Enter Fe value">
-    <p id="fe-result"></p>
-  </div>
-  <div class="parameter">
-    <label for="mg">Mg (ppm):</label>
-    <input type="number" id="mg" placeholder="Enter Mg value">
-    <p id="mg-result"></p>
-  </div>
-  <div class="parameter">
-    <label for="cl">Cl (ppm):</label>
-    <input type="number" id="cl" placeholder="Enter Cl value">
-    <p id="cl-result"></p>
-  </div>
-  <div class="parameter">
-    <label for="f">F (ppm):</label>
-    <input type="number" id="f" placeholder="Enter F value">
-    <p id="f-result"></p>
-  </div>
-  <div class="parameter">
-    <label for="as">As (ppb):</label>
-    <input type="number" id="as" placeholder="Enter As value">
-    <p id="as-result"></p>
-  </div>
-  <div class="parameter">
-    <label for="se">Se (ppb):</label>
-    <input type="number" id="se" placeholder="Enter Se value">
-    <p id="se-result"></p>
-  </div>
-  <button id="analyze-btn">Analyze</button>
-</section>
   </main>
   <footer>
     <p>Created by Eng. Odeh Al Amrow, 2024</p>
