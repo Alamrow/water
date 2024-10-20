@@ -1,28 +1,48 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Function to compare parameters
-    function compareParameters() {
-      const bod = parseFloat(document.getElementById("bod").value);
-      const cod = parseFloat(document.getElementById("cod").value);
-      const tds = parseFloat(document.getElementById("tds").value);
+  // Function to compare parameters
+  function compareParameters() {
+    const parameters = [
+      { id: "bod", max: 30 },
+      { id: "cod", max: 250 },
+      { id: "tds", max: 1500 },
+      { id: "no2", max: 1 },
+      { id: "no3", max: 10 },
+      { id: "tn", max: 10 },
+      { id: "tkn", max: 10 },
+      { id: "tss", max: 30 },
+      { id: "nh4", max: 1 },
+      { id: "nh3", max: 1 },
+      { id: "cn", max: 0.2 },
+      { id: "fog", max: 10 },
+      { id: "hg", max: 0.002 },
+      { id: "ag", max: 0.1 },
+      { id: "fe", max: 0.3 },
+      { id: "mg", max: 30 },
+      { id: "cl", max: 250 },
+      { id: "f", max: 1.5 },
+      { id: "as", max: 0.01 },
+      { id: "se", max: 0.05 }
+    ];
 
-      const result = document.getElementById("result");
-  
-      if (isNaN(bod) || isNaN(cod) || isNaN(tds)) {
-        result.textContent = "Please enter valid numbers for all parameters.";
+    parameters.forEach(param => {
+      const value = parseFloat(document.getElementById(param.id).value);
+      const result = document.getElementById(`result-${param.id}`);
+
+      if (isNaN(value)) {
+        result.textContent = "Please enter a valid number.";
         return;
       }
-  
-      let analysis = `BOD: ${bod}, COD: ${cod}, TDS: ${tds} - `;
-      if (bod > 30 || cod > 250 || tds > 1500) {
-        analysis += "Water quality is poor.";
+
+      if (value > param.max) {
+        result.textContent = "Out of Range";
+        result.style.color = "red";
       } else {
-        analysis += "Water quality is good.";
+        result.textContent = "Good Parameter";
+        result.style.color = "green";
       }
-  
-      result.textContent = analysis;
-    }
-  
-    // Event listener for the button
-    document.getElementById("analyze-btn").addEventListener("click", compareParameters);
-  });
-  
+    });
+  }
+
+  // Event listener for the button
+  document.getElementById("analyze-btn").addEventListener("click", compareParameters);
+});
