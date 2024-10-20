@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const bod = parseFloat(document.getElementById("bod").value);
       const cod = parseFloat(document.getElementById("cod").value);
       const tds = parseFloat(document.getElementById("tds").value);
-  
+  const tds = parseFloat(document.getElementById("tds").value);
       const result = document.getElementById("result");
   
       if (isNaN(bod) || isNaN(cod) || isNaN(tds)) {
