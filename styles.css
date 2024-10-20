@@ -1,110 +1,33 @@
-/* Existing styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-header p {
-    margin: 10px 0 0;
-    font-size: 1.2em;
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 
 h2 {
-    color: #333;
-    text-align: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-form {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: 0 auto;
+label {
+  font-size: 18px;
+  font-weight: bold;
 }
 
-input[type="text"],
-input[type="submit"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+input {
+  margin-bottom: 10px;
 }
 
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 20px;
 }
 
-input[type="submit"]:hover {
-    background-color: #45a049;
+.parameter {
+  margin-bottom: 20px;
 }
 
-/* Styles for results */
-.results-header {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.1em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.results-list {
-    list-style: none;
-    padding: 0;
-}
-
-.results-list li {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: bold;
-}
-
-.results-list .pass {
-    background-color: #4CAF50;
-}
-
-.results-list .fail {
-    background-color: #F44336;
-}
-
-.param {
-    flex: 1;
-}
-
-.result-value {
-    flex: 1;
-    color: #003366; /* Dark blue */
-    text-align: center;
-}
-
-.result-range {
-    flex: 1;
-    color: #333; /* Dark color for contrast */
-    text-align: right;
+p {
+  font-size: 16px;
+  font-weight: bold;
 }
