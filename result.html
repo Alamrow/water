@@ -3,28 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Results of Effluent Sample</title>
+    <title>Results Of Effluent Sample</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Results of Effluent Sample</h1>
+    <h1>Results Of Effluent Sample</h1>
     <div class="results-header">
         <span>Parameter</span>
         <span>Sample Result</span>
         <span>Range</span>
     </div>
-    <ul class="results-list">
-        {% for param, details in results.items %}
-            <li class="{% if details.within_range %}pass{% else %}fail{% endif %}">
-                <span class="param">{{ param|title }}</span>
-                <span class="result-value">{{ details.value }}</span>
-                <span class="result-range">{{ details.range }}</span>
-            </li>
-        {% endfor %}
-    </ul>
-    <a href="{% url 'index' %}">Check Another</a>
+    <ul class="results-list" id="resultsList"></ul>
+    <a href="index.html">Check Another</a>
     <footer>
         <p>© 2024 Eng. Odeh Al Amrow</p>
     </footer>
+    <script>
+        function getResults() {
+            const params = new URLSearchParams(window.location.search);
+            const results = JSON.parse(decodeURIComponent(params.get('results')));
+
+            const resultsList = document.getElementById('resultsList');
+
+            for (const [param, details] of Object.entries(results)) {
+                const listItem = document.createElement('li');
+                listItem.className = details.within_range ? 'pass' : 'fail';
+                listItem.innerHTML = `
+                    <span class="param">${param.charAt(0).toUpperCase() + param.slice(1)}</span>
+                    <span class="result-value">${details.value || 'N/A'}</span>
+                    <span class="result-range">${details.range}</span>
+                `;
+                resultsList.appendChild(listItem);
+            }
+        }
+
+        window.onload = getResults;
+    </script>
 </body>
-</html>
+</html
