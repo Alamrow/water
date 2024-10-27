@@ -1,76 +1,59 @@
 body {
-  background-color: #9370db; /* Change this to your desired color */
-  font-family: Arial, sans-serif;
-  text-align: center;
+    background-color: #9370db; /* Change this to your desired color */
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 h1 {
-  font-size: 28px; /* Increased font size for main title */
-  font-weight: bold;
-  margin-bottom: 20px; /* Space below title */
+    font-size: 28px;
+    margin: 20px 0;
 }
 
 h2 {
-  font-size: 24px; /* Size for subheadings */
-  font-weight: bold;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 label {
-  font-size: 18px;
-  font-weight: bold;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 input {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 button {
-  font-size: 16px;
-  padding: 10px 20px;
-  margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 20px;
 }
 
 .parameter {
-  margin-bottom: 20px; /* Space between parameters */
-}
-
-.results-header {
-  font-weight: bold;
-  display: flex; /* Flex layout for header */
-  justify-content: space-between; /* Space items evenly */
-  padding: 10px; /* Padding for header */
-}
-
-.results-list {
-  list-style-type: none; /* Remove bullet points */
-  padding: 0; /* Remove default padding */
-}
-
-.results-list li {
-  display: flex; /* Flex layout for list items */
-  justify-content: space-between; /* Space items evenly */
-  padding: 10px; /* Add padding for spacing */
-}
-
-.pass {
-  background-color: #d4edda; /* Light green background for pass */
-  color: green; /* Text color for pass */
-}
-
-.fail {
-  background-color: #f8d7da; /* Light red background for fail */
-  color: red; /* Text color for fail */
-}
-
-span {
-  flex: 1; /* Each span takes equal space */
-}
-
-footer {
-  margin-top: 20px; /* Space above footer */
+    margin-bottom: 20px;
 }
 
 p {
-  font-size: 16px; /* Font size for paragraphs */
-  font-weight: bold; /* Bold text */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.results-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.results-list li.pass {
+    color: green;
+}
+
+.results-list li.fail {
+    color: red;
 }
