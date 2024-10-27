@@ -4,8 +4,14 @@ body {
   text-align: center;
 }
 
-h1, h2 {
-  font-size: 24px;
+h1 {
+  font-size: 28px; /* Increased font size for main title */
+  font-weight: bold;
+  margin-bottom: 20px; /* Space below title */
+}
+
+h2 {
+  font-size: 24px; /* Size for subheadings */
   font-weight: bold;
 }
 
@@ -25,36 +31,46 @@ button {
 }
 
 .parameter {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Space between parameters */
 }
 
 .results-header {
   font-weight: bold;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
+  display: flex; /* Flex layout for header */
+  justify-content: space-between; /* Space items evenly */
+  padding: 10px; /* Padding for header */
 }
 
 .results-list {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
 }
 
 .results-list li {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
+  display: flex; /* Flex layout for list items */
+  justify-content: space-between; /* Space items evenly */
+  padding: 10px; /* Add padding for spacing */
 }
 
 .pass {
-  color: green;
+  background-color: #d4edda; /* Light green background for pass */
+  color: green; /* Text color for pass */
 }
 
 .fail {
-  color: red;
+  background-color: #f8d7da; /* Light red background for fail */
+  color: red; /* Text color for fail */
+}
+
+span {
+  flex: 1; /* Each span takes equal space */
+}
+
+footer {
+  margin-top: 20px; /* Space above footer */
 }
 
 p {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 16px; /* Font size for paragraphs */
+  font-weight: bold; /* Bold text */
 }
